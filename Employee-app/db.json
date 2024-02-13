@@ -1,0 +1,74 @@
+{
+  "Emp": [
+    {
+      "id": "450d",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-10"
+    },
+    {
+      "id": "d756",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-10"
+    },
+    {
+      "id": "835f",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": ""
+    },
+    {
+      "id": "eff6",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-10"
+    },
+    {
+      "id": "5c73",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-10"
+    },
+    {
+      "id": "3fbf",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-10"
+    },
+    {
+      "id": "08d1",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-13"
+    },
+    {
+      "id": "d22c",
+      "name": "vinod patil",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-13"
+    },
+    {
+      "id": "6310",
+      "name": "vin",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-16"
+    },
+    {
+      "id": "31ad",
+      "name": "vinod p",
+      "role": "intern",
+      "salary": 2436457,
+      "jdate": "2024-02-16"
+    }
+  ]
+}

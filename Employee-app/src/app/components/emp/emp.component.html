@@ -1,0 +1,84 @@
+<section class="login-block" style="position: relative; height: auto; ">
+  <div  style="background-image: url('https://burst.shopifycdn.com/photos/city-lights-through-rain-window.jpg?width=1000&format=pjpg&exif=0&iptc=0');background-size: cover;position: absolute;top: 0;left: 0; width: 100%;height: 100%;">
+ 
+<!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary float-right" style="margin: 5px 5px;" data-toggle="modal" data-target="#exampleModalLong">
+  Add Employee
+</button>
+ 
+<!-- Modal -->
+<div class="modal fade "  id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Enter the employee details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form [formGroup]="empform" (ngSubmit)="addemp()">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="role">Role:</label>
+            <input type="text" formControlName="role"  class="form-control" id="role" placeholder="Enter role">
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" formControlName="salary" class="form-control" id="salary" placeholder="Enter salary">
+          </div>
+          <div class="form-group">
+            <label for="joinDate">Join Date:</label>
+            <input type="date" formControlName="jdate" class="form-control" id="joinDate">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Add Details</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+ 
+ 
+<div class="main-div" >
+    <div class="mb-5">
+      <h1 class="text-center" style="margin-top:50px ;">Employee List</h1>
+    </div>
+   
+    <div class="mx-auto" style="width: 1000px;">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      <table class="table table-striped">
+        <thead class="table-light">
+          <tr>
+            
+            <th scope="col">NAME</th>
+            <th scope="col">ROLE</th>
+            <th scope="col">SALARY</th>
+            <th scope="col">JOINDATE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employees">
+            
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.role }}</td>
+            <td>{{ emp.salary | currency: "INR" }}</td>
+            <td>{{ emp.jdate | date : "dd/MMM/yyyy" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  <div style="text-align: center; position: relative; z-index: 2;">
+    <button class="btn btn-login" type="submit" (click)="logOut()">Sign out</button>
+  </div>
+ 
+ </div>
+  </section>

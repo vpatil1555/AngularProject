@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #cabebe; /* Set your desired background color */
+  }
+   
+  form {
+    width: 320px; /* Adjust the width as needed */
+    background-color: #bebbbb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  h1{
+    text-align: center;
+  }
+   
+  .field {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+   
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+   
+  input, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+   
+  button {
+    background-color: #007bff; /* Set your primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+   
+  button:hover {
+    background-color: #0056b3; /* Set your button hover color */
+  }
+   
+  .mt-2 {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
